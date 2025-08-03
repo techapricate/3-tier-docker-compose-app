@@ -57,23 +57,15 @@ Browser
 
 4. It looks like a mini version of how real production apps run in the cloud
 
-**Summary of Each Service**
-
-**1. Frontend:** Built using React + Tailwind CSS. Served with Nginx for speed and production readiness. React app talks to backend using fetch/AJAX requests
-
-**2. Backend:** Built using Node.js + Express. Exposes REST API endpoints. Connects to Postgres. Contains business logic (like authentication, validation, etc.)
-
-**3. Database:** Using PostgreSQL 15 official Docker image. Stores data persistently
-
 ![image](https://github.com/user-attachments/assets/d11f159b-3bfa-4def-b968-622b4f359482)
 
 **Steps to deploy the application (All commands are in _Italic font_):**
 
 1. SSH to the machine (I am using AWS EC2 Instance and Amazon-provided Ubuntu 24.04 LTS AMI). Install docker and docker compose. If you need help, refer to:
 
-Docker Installation: https://youtu.be/onF8QS9DMQA
+Docker Installation: Already done
 
-Docker compose installation: https://youtu.be/JAzg2TjuyRI
+Docker compose installation: Will do in this session
 
 2. _mkdir project_
 
@@ -81,11 +73,9 @@ Docker compose installation: https://youtu.be/JAzg2TjuyRI
 
 4. _cd project_
 
-5. Setup SSH-Based authentication to GitHub (optional)
+5. Few concepts related to SSH-based git repo access will be covered as part of git training.
 
-6. For SSH-Based authentication: _git clone -b react-tailwind-website git@github.com:bhavukm/3tier-react-tailwind.git_
-
-   For HTTP-Based authentication: _git clone -b react-tailwind-website https://github.com/bhavukm/3tier-react-tailwind.git_
+6. For HTTP-Based authentication: _git clone -b react-tailwind-website https://github.com/bhavukm/3tier-react-tailwind.git_
 
 7. _cd 3tier-react-tailwind_
 
